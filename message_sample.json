@@ -1,0 +1,110 @@
+{
+  "id": "18e205228c6e00c6",
+  "threadId": "18e205228c6e00c6",
+  "labelIds": ["UNREAD", "IMPORTANT", "CATEGORY_PERSONAL", "INBOX"],
+  "snippet": "this is a test -- Best regards, Andy Chen Jiang",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      { "name": "Delivered-To", "value": "realandycok9@gmail.com" },
+      {
+        "name": "Received",
+        "value": "by 2002:a50:d750:0:b0:567:a37a:9aed with SMTP id i16csp2348278edj;        Fri, 8 Mar 2024 15:07:19 -0800 (PST)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a19:ca17:0:b0:513:3fa6:efe3 with SMTP id a23-20020a19ca17000000b005133fa6efe3mr249647lfg.8.1709939238940;        Fri, 08 Mar 2024 15:07:18 -0800 (PST)"
+      },
+      {
+        "name": "ARC-Seal",
+        "value": "i=1; a=rsa-sha256; t=1709939238; cv=none;        d=google.com; s=arc-20160816;        b=C3sMOiM6qNzZpWPv2WePPI6gE9Ay42gqtO5CSSeQ+IBV50jC9YzBGolHtAB0phkqdh         Wf1LnnQsEieq5eTsGdUDWTLxvgMyU2+6U35M1aPERg/9Z+ZOZe1vDDUY8IL3XaYUe3Na         nVC0jVS575AGunhHM2p7dYqJk9iiLHdypDsTdp0QymWpUqSgvRRZTN+VjY4AppCJxrhl         +vpgHopj6ziroi79ioY9ob0rPh0KyYxQ1Oba9qqbHGIW9AipZ2n8YScCN428uJ2c17m/         afSKD/sCt48j6QJWTuHT+1rEfL//KvkSZGNgepzOs+jAvLoG1HgJjR5CGHvdZVlpyrS0         uuVQ=="
+      },
+      {
+        "name": "ARC-Message-Signature",
+        "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:subject:message-id:date:from:mime-version:dkim-signature;        bh=NdDMv21zFt+fPjSPRos3FROC0n4DTnwLUSUGsKVKg5M=;        fh=pD1yEutnjUTrE6BHoh+Uf4gxLlyaqWt2xjJQFd2UeLA=;        b=rfet4tIMjLScrCFqLl/NlNFT6kB1krrVokDNYGO7KFfC3wANFDqQwiiaIDzLlbz362         fTzppvLIxOpYN4KFh3Mm1zB+0mF/kGKGnhl7QRQJOddZYtPbU3zX/u18PwEvdKxIuSyj         gjmEZRLzMwTw4xKCGVnYyzmeC0Q6c0o2jRcRa6xKTsy2oAGsuNkG1rxX9gGpwKSo8DAn         wmbsPa1u5Egq3o6Ve1UNCB0NSBnWs4tydkJeoBzHXkSaAkjUIlia5Oi0Qpl+VxFeQxh6         JwjHK9E+0wdGq9fovODBLk2xhPC7P+N0j8m3IeOEhxkWtoebBWNmR1mMb4d0zHBuVVyS         KbaA==;        dara=google.com"
+      },
+      {
+        "name": "ARC-Authentication-Results",
+        "value": "i=1; mx.google.com;       dkim=pass header.i=@gmail.com header.s=20230601 header.b=d3UI24+P;       spf=pass (google.com: domain of jiangchen.611@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jiangchen.611@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      { "name": "Return-Path", "value": "<jiangchen.611@gmail.com>" },
+      {
+        "name": "Received",
+        "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id y22-20020a056512045600b005135a2cce3csor171047lfk.19.2024.03.08.15.07.18        for <realandycok9@gmail.com>        (Google Transport Security);        Fri, 08 Mar 2024 15:07:18 -0800 (PST)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "pass (google.com: domain of jiangchen.611@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20230601 header.b=d3UI24+P;       spf=pass (google.com: domain of jiangchen.611@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=jiangchen.611@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20230601; t=1709939238; x=1710544038; dara=google.com;        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject         :date:message-id:reply-to;        bh=NdDMv21zFt+fPjSPRos3FROC0n4DTnwLUSUGsKVKg5M=;        b=d3UI24+PTybAwzwRBgfX9mF9O4mfGN2EDZhuV9leZEEw1baiiTyyEBHSr97KO4bfyt         fYty1o61AcRsirOhmIFXK8kPvgjkaVjYBRV55ixXDyvpJ+hmM943mGMDLPExiqII9a3c         BgmuNRddOogArDG+TPplSOPve2fKGB5PUgFpPPAQhSyxJNFRpGMt1UuoK97Mnaave24F         oKRUS2YTJx9iHZmdxE+WM/zJn4GW/9rUBSApAg/NzaOdeVLkctSFu4lEkU8N5uvyhn6u         wUx7w+gRPuQ2Ydeq+PBkKROYggwZf7yEvnnQA+Q4p3x5pguCWFb6Mvt/n3q8sqrQOlmC         YOGg=="
+      },
+      {
+        "name": "X-Google-DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20230601; t=1709939238; x=1710544038;        h=to:subject:message-id:date:from:mime-version:x-gm-message-state         :from:to:cc:subject:date:message-id:reply-to;        bh=NdDMv21zFt+fPjSPRos3FROC0n4DTnwLUSUGsKVKg5M=;        b=sFPzHOYyUaLaJsdxvm5pD2UIHfwrnU4cO0r/ikE8KHCppwbYp8XCd2pa7Dg7te6i5j         96+67azGh571aENu6bA6wFMbugEh7JegE1quuSS/lXS1gYwqrEKDScsTmZlsA7Es8k7b         n2APUG2gSwF9e+aHml/5KA3QvyvHxtlMOMGw19ex53Ja819+PAfIaDrx5DQxTaz/v9kX         0qPW+ssf9CyANZgSmYTRyDkVuhyikEfGGQh/yAqpmOp1cAMRsHOSOe+RcvGzbpr5iJ9b         ZimDWljj2qdWi7ZvgZMAessyBUG9w2dLoCu986SQVpRPwNQ88qKZhQFh+xSvomDdFdV7         1ntw=="
+      },
+      {
+        "name": "X-Gm-Message-State",
+        "value": "AOJu0YxNINOTK5ySR/OTAWYQi5xa4GGqhx6meagXllUxpSZ0s1rWAV2G BYQf6qwZFGKhufNc8trRSJeCT6pQwze90YbVSEmD6ammyi2k4xn/AbmxH1spF1IgpAq8rIKJ8Xy hbptmpBKw8RG+yZhqnfzEZVX9CUeAyWxg"
+      },
+      {
+        "name": "X-Google-Smtp-Source",
+        "value": "AGHT+IFu6OdiJLENDLwlNikVZucUCZONkrWOuS77BaMGvrbNtJ/9JSccg5KFssRo/X7vxGM/GYJ2AUt0x3kFAQR17vY="
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:ac2:498d:0:b0:513:5f1a:5f66 with SMTP id f13-20020ac2498d000000b005135f1a5f66mr230154lfl.13.1709939238021; Fri, 08 Mar 2024 15:07:18 -0800 (PST)"
+      },
+      { "name": "MIME-Version", "value": "1.0" },
+      { "name": "From", "value": "Andy Jiang <jiangchen.611@gmail.com>" },
+      { "name": "Date", "value": "Fri, 8 Mar 2024 18:07:06 -0500" },
+      {
+        "name": "Message-ID",
+        "value": "<CAO8YKQFNdbQyBAEgTh55B567yaseoOJvKHYO1zeCo_qVWNdF9g@mail.gmail.com>"
+      },
+      { "name": "Subject", "value": "test" },
+      { "name": "To", "value": "realandycok9@gmail.com" },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"000000000000deafec06132e4077\""
+      }
+    ],
+    "body": { "size": 0 },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/plain; charset=\"UTF-8\"" }
+        ],
+        "body": {
+          "size": 55,
+          "data": "dGhpcyBpcyBhIHRlc3QNCg0KLS0gDQpCZXN0IHJlZ2FyZHMsDQpBbmR5IENoZW4gSmlhbmcNCg=="
+        }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/html; charset=\"UTF-8\"" }
+        ],
+        "body": {
+          "size": 266,
+          "data": "PGRpdiBkaXI9Imx0ciI-dGhpcyBpcyBhIHRlc3Q8YnIgY2xlYXI9ImFsbCI-PGRpdj48YnI-PC9kaXY-PHNwYW4gY2xhc3M9ImdtYWlsX3NpZ25hdHVyZV9wcmVmaXgiPi0tIDwvc3Bhbj48YnI-PGRpdiBkaXI9Imx0ciIgY2xhc3M9ImdtYWlsX3NpZ25hdHVyZSIgZGF0YS1zbWFydG1haWw9ImdtYWlsX3NpZ25hdHVyZSI-PGRpdj5CZXN0IHJlZ2FyZHMsPC9kaXY-DQo8ZGl2PkFuZHkgQ2hlbiBKaWFuZzwvZGl2Pg0KPGRpdj48YnI-PC9kaXY-PC9kaXY-PC9kaXY-DQo="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5472,
+  "historyId": "2816",
+  "internalDate": "1709939226000"
+}
